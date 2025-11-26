@@ -1,46 +1,73 @@
-.calc{
-	width:100%;
-	height:500px;
-	background:#FF3219;
-	border:2px solid;
-	margin-top:50px;
+:root {
+  --white: #f9faff;
+  --platinum: #e3e4e8;
+  --windsurfing: #32779b;
+  --marina: #5a91c7;
+  --gray: #9a9a9a;
+  --onyx: #3c3d44;
+  --charcoal: #343c47;
+  --corners: 24px 0;
+  --base-font-size: 1rem;
 }
 
-#screen{
-	width:90%;
-	height:50px;
-	margin-top:5%;
-	margin-left:5%;
-	pointer-events: none;
-	padding-left:20px;
-	font-size: 30px;
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
-.btn {
-	width: 50px;
-	height: 50px;
-	margin-top: 20px;
-	margin-left: 25px;
-	background: black;
-	color: yellow;
+::-webkit-scrollbar {
+    width: 4px;
 }
 
-.clears{
-	margin-top:20px;
-	width: 300px;
-	height: 50px;
-	margin-left: 25px;
-	background: #00A5FF;
-	color: black;
+body {
+  font-size: var(--base-font-size);
+  font-family: "Inter", sans-serif;
 }
 
-.opera input[type="text"]{
-	width: 20px;
-	height: 20px;
-	margin-top: 10px;
-	margin-left:10px;
-	padding-left: 5px;
-	border: 3px;
-	border-color: yellow;
-	font-size: 20px;
+h1 {
+  font-size: 4rem;
+  font-weight:bold;
+  color: black;
+}
+
+h2 {
+  color: #595959;
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+  margin-top: .5rem !important;
+  line-height: 2.5rem;
+}
+
+h3 {
+  color: #595959;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%
+}
+
+.icons {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem;
+  padding-top: 2.5rem;
+}
+
+p {
+  text-align: center;
+  color: #595959;
+  margin-top: 3rem;
 }
