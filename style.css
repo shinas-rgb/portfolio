@@ -23,6 +23,10 @@ html {
     width: 4px;
 }
 
+video::-webkit-media-controls {
+  display: none !important;
+}
+
 body {
   font-size: var(--base-font-size);
   font-family: "Inter", sans-serif;
@@ -75,6 +79,10 @@ p {
   margin-top: 3rem;
 }
 
+.scroll-text-anim {
+  text-align: center;
+}
+
 ul svg {
   height: 34px;
 }
@@ -98,8 +106,31 @@ ul svg {
 @media only screen and (max-width: 990px) {
     .v2-text-hero {
         color: black;
-        font-size: 3rem;
-        font-weight: bold;
+        font-size: 1.9rem;
+        font-weight: 700;
         margin-right: 0px;
     }
+}
+@media only screen and (max-width: 990px) {
+    h2 {
+      font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    line-height: 1.1rem;
+    }
+    h3 {
+    font-size: .7rem;
+    font-weight: 400;
+    margin-top: 9px;
+  }
+  .texts {
+    padding-top: 0.3rem;
+  }
+  .icons {
+    margin-top: 4rem;
+  }
+  p {
+    font-size: 0.7rem;
+    margin-top: 2.5rem;
+  }
 }
